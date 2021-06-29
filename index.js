@@ -22,7 +22,7 @@ app.get('/',(req,res) => {
 })
 
 // check connect wms
-/*app.get('/wms',(req, res) => {
+app.get('/wms',(req, res) => {
     pool.query("SELECT * from wmsfw.saleorderhead "+
     " WHERE sale_order_no = '1956855'",(err, result)=>{
         if (err){
@@ -85,7 +85,7 @@ app.put('/updatewms/:_id',(req,res) => {
             res.send("wms update success!!")
         }
     })
-})*/
+})
 
 
 app.listen(PORT,() => {
